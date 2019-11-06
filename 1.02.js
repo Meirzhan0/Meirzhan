@@ -2,12 +2,14 @@
 // Используя условный оператор и не используя логические, 
 // найдите минимальное число и отобразите на экране имя переменной и ее значение. 
 
-let min = -100
-let max = 100 
 
-let val_one = Math.floor(Math.random() * (max - min + 1) + min)
-let val_two = Math.floor(Math.random() * (max - min + 1) + min)
-let val_three = Math.floor(Math.random() * (max - min + 1) + min)
+function randomInt(min, max){
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+let val_one = randomInt(-100, 100)
+let val_two = randomInt(-100, 100)
+let val_three = randomInt(-100, 100)
 
 console.log(
     'val_one = ' + val_one + '\n' +
