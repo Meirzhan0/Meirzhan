@@ -17,5 +17,5 @@ let day =  week[Math.floor(Math.random() * 7)]
 
 console.log('сегодня', day)
 
-let temp_val = (day != 'суббота' && day != 'воскресенье') ? console.log('пора на работу') : null
+{ (day != 'суббота' && day != 'воскресенье') ? console.log('пора на работу') : null }
 
