@@ -25,6 +25,6 @@ let cup = 0.5 // объем кружки в литрах
 let coffePerLesson = 1 // кружек кофе за одно занятие
 let teePerLesson = 2 // кружек чая за одно занятие
 let lessonPerWeek = 2 // занятий в неделю
-let drinkPerWeek = (coffePerLesson + teePerLesson) * cup * lessonPerWeek // сколько жидкости выпито за неделю
 
+let drinkPerWeek = (coffePerLesson + teePerLesson) * cup * lessonPerWeek // сколько жидкости выпито за неделю
 console.log(`На занятиях я выпиваю ${drinkPerWeek} литра жидкости в неделю/nКошмар ))`)
