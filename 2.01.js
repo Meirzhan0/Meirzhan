@@ -7,7 +7,7 @@
 let number = null
 let summ = 0
 
-while (number == NaN || number == null) {
+while (isNaN(number) || number == null) {
     number = Number(prompt('введите целое число'))
 }
 
