@@ -7,7 +7,7 @@ function createRandomArray(arrayLength=10) {
     let digits = new Array(10).fill(0).map((val, index) => index.toString()) // массив 0-9
     let arrForRandom = [].concat(lowerAlphabet, digits, digits, digits) // массив a-z 0-9 0-9 0-9
 
-    //случайное целое число в диапазоне min max
+    //случайное целое число в диапазоне от min до max
     let getRndIntInRange = (max, min=0) => Math.floor(Math.random() * (max - min + 1) + min) 
 
     //случайный элемент массива
