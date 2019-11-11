@@ -3,23 +3,10 @@
 // с помощью любых методов массива (indexOf, splice ...). 
 // Затем объедините элементы массива в строку и выведите в alert исходный и итоговый варианты.
 
-//        'Как звонарь Жак однажды сломал головой фонарь'
+//        'Как однажды Жак звонарь головой сломал фонарь'  
 let str = 'Как однажды Жак звонарь сломал фонарь головой'
 let arr = str.split(' ')
 
-function permutation(oneWord, twoWord, arrIn) {
-    if (arrIn.indexOf(oneWord) > arrIn.indexOf(twoWord)) {
-        arrIn.splice(arrIn.indexOf(oneWord), 1, twoWord)
-        arrIn.splice(arrIn.indexOf(twoWord), 1, oneWord)
-    } else {
-        arrIn.splice(arrIn.indexOf(twoWord), 1, oneWord)
-        arrIn.splice(arrIn.indexOf(oneWord), 1, twoWord)
-    }
-    return arrIn
-}
+arr.splice(arr.indexOf('сломал'), 0, arr.splice(arr.indexOf('головой'), 1).toString())
 
-arr = permutation('головой', 'фонарь', permutation('звонарь', 'однажды', arr))
-
-let newStr = arr.join(' ')
-
-console.log(`${str}\n${newStr}`)
+alert(`${str}\n${arr.join(' ')}`)
